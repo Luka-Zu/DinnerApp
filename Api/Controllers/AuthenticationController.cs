@@ -1,4 +1,5 @@
 ﻿using Contracts.Authentication;
+using DinnerApp.Api.Filters;
 using DinnerApp.Application.Services.Authentication;
 using Microsoft.AspNetCore.Mvc;
 
@@ -31,6 +32,7 @@ public class AuthenticationController : Controller
             Result.Token
             );
         return Ok(Response);
+    
     }
 
     [HttpPost]
